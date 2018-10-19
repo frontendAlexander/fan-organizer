@@ -1,4 +1,3 @@
-import React from 'react';
 import Home from './pages/Home';
 import StartingPage from './pages/StartingPage';
 import NotFound from './pages/404';

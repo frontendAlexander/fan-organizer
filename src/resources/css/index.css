@@ -1,0 +1,17 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.bckBlue {
+	background: #a3a8ee;
+}
+
+.container {
+	width: 1024px;
+}
