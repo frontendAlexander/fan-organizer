@@ -1,23 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { routes } from './routes';
-import Layout from './hoc/Layout';
-
+import PrivateRoute from './containers/PrivateRoute';
 
 
 const App = () => {
   const renderSwitch = () => (
     <Switch>
-      {routes.map(route => {
-        const component = route.component;
+      {routes.map(({path, component, isPrivate, isExact}) => {
         return (
-          <Route
-            key={route.path}
-            exact={route.isExact}
-            path={route.path}
-            component={component}
-            
-          />
+          isPrivate ?
+          <PrivateRoute key={path} component={component} exact={isExact} path={path} />
+          : <Route key={path} component={component} exact={isExact} path={path}/>
         );
       })}
     </Switch>
@@ -25,11 +19,9 @@ const App = () => {
 
   return (
     <Router>
-      <Layout>
-        <React.Fragment>
-            {renderSwitch()}
-        </React.Fragment>
-      </Layout>
+      <React.Fragment>
+        {renderSwitch()}
+      </React.Fragment>
     </Router>
   );
 };
