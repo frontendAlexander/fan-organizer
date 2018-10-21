@@ -1,6 +1,8 @@
 import React,{ Component } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import ToolBar from '@material-ui/core/Toolbar';
+import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom';
 
 import { CSKALogo } from '../ui/icons';
 
@@ -25,6 +27,15 @@ class Header extends Component {
                                 link={true}
                                 linkTo='/'
 							/>
+					<Link
+						to="/the-team"
+					>
+						<Button
+							color="inherit"
+						>
+							Команда
+						</Button>
+					</Link>
 						
 					
 				</ToolBar>

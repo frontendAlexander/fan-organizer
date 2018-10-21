@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom';
 
 
 
-
+// захардкожено!!!
 export const isAuth = true;
 
 const PrivateRoute = ({ component: Component, isAuth, ...rest }) => (
