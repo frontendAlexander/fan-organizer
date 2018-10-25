@@ -1,0 +1,40 @@
+.text {
+    display: inline-flex;
+    flex-direction: column;
+    height: 800px;
+    width: 100%;
+}
+
+.second {
+    height: 400px;
+    width: 600px;
+    position: absolute;
+    font-size: 22px;
+    right: 0;
+    top: 114px;
+}
+.title {
+    position: absolute;
+    top: -64px;
+    left: -226px;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.player{
+    height:300px;
+    width:200px;
+}
+.number {
+    position: relative;
+    width: 600px;
+    font-size: 48px;
+}
+
+.special {
+    position: absolute;
+    left: -120px;
+    bottom: -400px;
+    font-size: 36px;
+    padding-top: 30px;
+}

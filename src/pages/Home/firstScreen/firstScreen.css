@@ -1,0 +1,7 @@
+.wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    height: 600px;
+    width: 100%;
+    margin-bottom: 40px;
+}

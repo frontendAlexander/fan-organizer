@@ -1,0 +1,15 @@
+.container {
+    display: block;
+    height: 300px;
+    width: 1024px;
+    margin-bottom: 100px;
+    justify-content: center;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: center;
+    text-align: center;
+}

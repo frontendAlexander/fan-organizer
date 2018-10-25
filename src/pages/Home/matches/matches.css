@@ -1,0 +1,20 @@
+.container {
+    display: block;
+    height: 666px;
+    width: 100%;
+    margin-bottom: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.wrapper {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: center;
+    text-align: center;
+}
+.title {
+    text-align: center;
+    font-size: 32px;
+}

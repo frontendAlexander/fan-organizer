@@ -1,5 +1,10 @@
+footer {
+	text-align: center;
+	min-width: 1024px;
+}
+
 .bckBlue {
-	background: #a3a8ee;
+	background: #120484;
 }
 .logo {
     width: 100%

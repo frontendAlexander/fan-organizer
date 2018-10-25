@@ -1,0 +1,19 @@
+.wrapper {
+    display: block;
+    flex-direction: row;
+    height: 600px;
+    width: 1024px;
+    overflow: hidden;
+}
+
+.container {
+    display: block;
+    height: 666px;
+    width: 1024px;
+    position: relative;
+}
+.item {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 100px;
+}

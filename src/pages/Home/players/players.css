@@ -1,0 +1,28 @@
+.newcomers {
+    display: block;
+    position: relative;
+    height: 600px;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+.players {
+    height: 600px;
+    display: inline-flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: space-between;
+    flex-wrap: no-wrap;
+    position: relative;
+    max-width: 1024px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.cards{
+    opacity: 2;
+}
+.bck{
+    height: 500px;
+    width: 500px;
+    margin-left: 50px;
+}

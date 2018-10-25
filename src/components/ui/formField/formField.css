@@ -1,0 +1,14 @@
+.labelLnputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.emailInput {
+    height:40px;
+    text-align: center;
+    min-width: 380px;
+    background-color:white;
+    color: red;
+    border: 3px solid blue;
+    margin-bottom: 24px;
+}
