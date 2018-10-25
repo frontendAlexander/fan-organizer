@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './matches.css';
-import { Tag } from '../../../components/ui/helper';
+import { Tag } from '../../../components/ui/helpers';
 import Blocks from './Blocks';
 
 export const Matches = (props) => {

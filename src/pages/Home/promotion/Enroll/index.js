@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import FormField from '../../../../components/ui/formField';
-import {validate} from '../../../../components/ui/helper';
+import {validate} from '../../../../components/ui/helpers';
 
 
 import { firebasePromotions } from '../../../../firebase';

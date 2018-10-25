@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 import { firebasePlayers, firebase } from '../../firebase';
 import { Promise } from 'core-js';
 import styles from './TheTeam.css';
-import { firebaseIterator } from '../../components/ui/helper';
+import { firebaseIterator } from '../../components/ui/helpers';
 import PlayerCard from '../../components/ui/playerCard';
 
 
