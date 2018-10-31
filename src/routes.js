@@ -2,6 +2,7 @@ import Root from './pages/Root';
 import Home from './pages/Home';
 import NotFound from './pages/404';
 import TheTeam from './pages/TheTeam';
+import SignIn from './pages/SignIn';
 
 
 export const routes = [
@@ -25,6 +26,13 @@ export const routes = [
     isExact: true,
     isPrivate: false,
     component: TheTeam
+  },
+  {
+    name: 'SignIn',
+    path: '/sign-in',
+    isExact: 'true',
+    isPrivate: false,
+    component: SignIn
   },
   {
     name: 'NotFound',

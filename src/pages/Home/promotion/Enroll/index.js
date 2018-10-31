@@ -108,12 +108,13 @@ export default class Enroll extends Component {
                             Введите свой почтовый ящик
                         </div>
                         <div className={styles.input}>
+							<div className={styles.inputText}>
 							<FormField 
 									id={'email'} 
 									formdata={this.state.formdata.email}
 									change={ (element) => this.updateForm(element) }
 							/>
-                            
+                            </div>
                             
                             {this.state.formError ? <div className={styles.label}>Что-то пошло не так, попробуйте еше раз!</div> : null}
                             

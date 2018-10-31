@@ -28,11 +28,12 @@ export const FormField = (props) => {
 							: null
 						}
 							<input
-								className={styles.emailInput}
+								
 								{...formdata.config}
 								value={formdata.value}
 								onChange={ event => change( {event, id} )}
 							></input>
+							
 							{ 
 								showError(formdata.element)  }
 						</div>
