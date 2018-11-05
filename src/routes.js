@@ -4,7 +4,7 @@ import NotFound from './pages/404';
 import TheTeam from './pages/TheTeam';
 import SignIn from './pages/SignIn';
 import Dashboard from './pages/Dashboard';
-
+import AdminMatches from './pages/AdminMatches'
 
 export const routes = [
   {
@@ -44,6 +44,13 @@ export const routes = [
     isExact: true,
     isPrivate: true,
     component: Dashboard
+  },
+  {
+    name: 'AdminMatches',
+    path: '/admin-matches',
+    isExact: true,
+    isPrivate: true,
+    component: AdminMatches
   },
   {
     name: 'NotFound',

@@ -8,7 +8,7 @@ const AdminLayout = (props) => (
 	        <AdminNav/>
 	    </div>
 	    <div className={styles.right}>
-	        {props.chidlren}
+	        {props.children}
 	    </div>
     </div>
 );

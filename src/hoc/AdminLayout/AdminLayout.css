@@ -1,5 +1,6 @@
 .container {
 	width: 1024px;
+	display: inline-flex;
 }
 .left {
 	width: 20%;

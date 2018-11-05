@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './StartingPage.css';
+import styles from './Home.css';
 import FirstScreen from './firstScreen';
 import Matches from './matches';
 import Players from './players';

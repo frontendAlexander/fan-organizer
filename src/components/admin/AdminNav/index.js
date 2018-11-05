@@ -5,11 +5,11 @@ import Divider from '@material-ui/core/Divider';
 import {firebase} from '../../../firebase';
 import styles from './AdminNav.css';
 
-export const AdminNav = () => {
+export const AdminNav = (props) => {
 	const links = [
 		{
-			title: '1',
-			linkTo: '/'
+			title: 'Матчи',
+			linkTo: '/admin-matches'
 		},
 		{
 			title: '2', 

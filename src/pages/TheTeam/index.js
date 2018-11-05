@@ -7,6 +7,7 @@ import { firebaseIterator } from '../../components/ui/helpers';
 import PlayerCard from '../../components/ui/playerCard';
 
 
+
 export default class TheTeam extends Component {
 	state = {
 		loading: true,
@@ -41,6 +42,7 @@ export default class TheTeam extends Component {
 	)
 	render(){
 		return (
+			
 			<div>
 				<h1>Команда</h1>
 				{!this.state.loading ?
@@ -76,6 +78,7 @@ export default class TheTeam extends Component {
                         </div>
 				: null}
 			</div>
+			
         )
 	}
 } 
