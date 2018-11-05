@@ -14,7 +14,6 @@ class Blocks extends Component {
 		firebaseMatches.limitToLast(6).once('value')
 		.then( (snapshot) =>{ 
 			const matches = firebaseIterator(snapshot);
-			console.log(matches);
 			this.setState({
 					matches: matches
 			})
@@ -23,9 +22,9 @@ class Blocks extends Component {
 	showMatches = (matches) => (
 			this.state.matches ?
 			this.state.matches.map( (match) => (
-				<div className={styles.item}>
+				<div className={styles.item} key={match.id}>
 					<Slide bottom key={match.id}>
-						<MatchesBlock match={match}/>
+						<MatchesBlock match={match} key={match.id}/>
 					</Slide>
 				</div>
 			))
@@ -34,7 +33,7 @@ class Blocks extends Component {
 	render(){
 		return (
 			<div className={styles.wrapper}>
-				{this.showMatches(this.state.matches)}
+				{this.showMatches()}
 			</div>
         )
 	}		

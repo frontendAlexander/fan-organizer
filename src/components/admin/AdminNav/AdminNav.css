@@ -1,0 +1,16 @@
+.wrapper {
+	display: inline-flex;
+	flex-direction: column;
+	position: relative;
+	margin-top: 60px;
+	height: 600px;
+	width: 200px;
+	background-color: black;
+	color: white;
+}
+.item {
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	border: 1px solid white;
+}

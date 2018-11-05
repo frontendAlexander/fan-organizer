@@ -49,10 +49,18 @@ class SignIn extends Component {
             dataToSubmit[key] = this.state.formdata[key].value;
             formIsValid = this.state.formdata[key].valid && formIsValid;
         }
-        //хардкод formIsValid
-        if (dataToSubmit.email === "admin@cska" && dataToSubmit.password === "123"){
-            console.log('Вы вошли в систему');
-        } else {
+        if(formIsValid){
+            firebase.auth().signInWithEmailAndPassword(
+                    dataToSubmit.email,
+                    dataToSubmit.password
+                ).then(()=>{
+                    this.props.history.push('/dashboard');
+                })
+                .catch((error)=>{this.setState({
+                    formError: true
+                })})
+        }
+        else {
             this.setState({
                 formError: true
             })
@@ -94,7 +102,7 @@ class SignIn extends Component {
                                 />
                                 {this.state.formError ? 
                                     <div className="error-label">Что-то пошло не так, попробуйте еше раз!</div> : null }
-                                <button onCLick={(event)=>this.submitForm(event)}>Log in</button>
+                                <button onClick={(event)=>this.submitForm(event)}>Log in</button>
                             </div>
                     </form>
 				</div>

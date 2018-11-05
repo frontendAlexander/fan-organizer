@@ -15,15 +15,6 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
-
-.bckBlue {
-	background: #a3a8ee;
-}
-
-.container {
-	width: 1024px;
-}
-
 label {
 	display: block;
 	margin-bottom: 1rem;
