@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import ListItem from '@material-ui/core/ListItem';
 import Divider from '@material-ui/core/Divider';
 import {firebase} from '../../../firebase';
-import styles from './AdminNav.css';
+import styles from './adminNav.css';
 
 export const AdminNav = (props) => {
 	const links = [
@@ -12,8 +12,8 @@ export const AdminNav = (props) => {
 			linkTo: '/admin-matches'
 		},
 		{
-			title: '2', 
-			linkTo: '/'
+			title: 'Добавить матч', 
+			linkTo: '/admin-matches/edit-match'
 		},
 		{
 			title: '3',
@@ -29,9 +29,9 @@ export const AdminNav = (props) => {
 		}
 	];
 	const renderItems = () => (
-		links.map((item)=>(
-				<Link to={item.linkTo} key={item.title}>
-					<div className={styles.item} key={item.title}>{item.title}</div>
+		links.map((item, i)=>(
+				<Link to={item.linkTo} key={i}>
+					<div className={styles.item} key={i}>{item.title}</div>
 				</Link>
 			))
 		)

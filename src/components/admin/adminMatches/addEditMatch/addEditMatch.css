@@ -1,0 +1,27 @@
+.edit {
+	display: block;
+	position: relative;
+	margin-top: 70px;
+}
+.wrapper {
+	display: inline-flex;
+	flex-direction: column;
+	max-width: 1024px;
+	box-sizing: border-box;
+	align-items: center;
+}
+.left {
+	display: flex;
+	width: 50%;
+	
+
+}
+.right {
+	display: flex;
+	
+	width: 50%;
+}
+.middle {
+	display: block;
+	width: 100%;
+}

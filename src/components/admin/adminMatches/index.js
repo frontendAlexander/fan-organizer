@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import AdminLayout from '../../hoc/AdminLayout';
+import AdminLayout from '../../../hoc/AdminLayout';
+import {Link} from 'react-router-dom';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableHead from '@material-ui/core/TableHead';
@@ -7,9 +8,9 @@ import TableCell from '@material-ui/core/TableCell';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import { firebaseMatches } from '../../firebase';
-import { firebaseIterator } from '../../components/ui/helpers'
-import styles from './AdminMatches.css';
+import { firebaseMatches } from '../../../firebase';
+import { firebaseIterator } from '../../ui/helpers'
+import styles from './adminMatches.css';
 
 class AdminMatches extends Component {
 	
@@ -30,7 +31,7 @@ class AdminMatches extends Component {
 		const { user } = this.props;
 		return (
 			<AdminLayout>
-					<div>
+					<div className={styles.matches}>
 						<Paper>
 							<Table>
 								<TableHead>
@@ -45,7 +46,7 @@ class AdminMatches extends Component {
 											Результат
 										</TableCell>
 										<TableCell>
-											Завершен
+											Статус
 										</TableCell>
 									</TableRow>
 								</TableHead>
@@ -57,15 +58,16 @@ class AdminMatches extends Component {
 													{match.date}
 												</TableCell>
 												<TableCell>
-													{match.away}
+													<Link to={`admin-matches/edit-match/${match.id}`}> Info </Link>
+													{match.away} <strong>-</strong> {match.local}
 												</TableCell>
 												<TableCell>
-													{match.resultAway}
+													{match.resultAway}<strong>-</strong>{match.resultLocal}
 												</TableCell>
 												<TableCell>
-												{match.final === 'yes' ?
-													<span className={styles.red}>Завершен</span> :
-													<span className={styles.green}>Не сыгран</span>
+												{match.final === 'Yes' ? (
+													<span className={styles.red}>Завершен</span>) :
+													(<span className={styles.green}>Не сыгран</span>)
 												}
 												</TableCell>
 											</TableRow>

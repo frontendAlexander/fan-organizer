@@ -1,0 +1,15 @@
+.matches {
+	margin-top: 60px;
+}
+
+.red {
+	color: red;
+}
+.green {
+	color: green;
+}
+.progress {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}

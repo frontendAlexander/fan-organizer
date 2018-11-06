@@ -1,5 +1,5 @@
 import React from 'react';
-import AdminNav from '../../components/admin/AdminNav';
+import AdminNav from '../../components/admin/adminNav';
 import styles from './AdminLayout.css';
 
 const AdminLayout = (props) => (

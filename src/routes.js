@@ -4,7 +4,8 @@ import NotFound from './pages/404';
 import TheTeam from './pages/TheTeam';
 import SignIn from './pages/SignIn';
 import Dashboard from './pages/Dashboard';
-import AdminMatches from './pages/AdminMatches'
+import AdminMatches from './components/admin/adminMatches'
+import addEditMatch from './components/admin/adminMatches/addEditMatch';
 
 export const routes = [
   {
@@ -51,6 +52,27 @@ export const routes = [
     isExact: true,
     isPrivate: true,
     component: AdminMatches
+  },
+  {
+    name: 'addEditMatch/edit-match',
+    path: '/admin-matches/edit-match',
+    isExact: true,
+    isPrivate: true,
+    component: addEditMatch
+  },
+  {
+    name: 'addEditMatch',
+    path: '/admin-matches/edit-match/:id',
+    isExact: true,
+    isPrivate: true,
+    component: addEditMatch
+  },
+  {
+    name: 'addEditMatch/edit-match',
+    path: '/admin-matches/edit-match',
+    isExact: true,
+    isPrivate: true,
+    component: addEditMatch
   },
   {
     name: 'NotFound',

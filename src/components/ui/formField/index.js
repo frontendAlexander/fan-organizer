@@ -21,10 +21,10 @@ export const FormField = (props) => {
 			case('input'):
 				formTemplate = (
 						<div>
-						{formdata.showlabel ? 
-							<div className="labelLnputs">
+						{formdata.showLabel ? 
+							<h3 className="labelLnputs">
 								{formdata.config.label}
-							</div>
+							</h3>
 							: null
 						}
 							<input
@@ -38,6 +38,33 @@ export const FormField = (props) => {
 								showError(formdata.element)  }
 						</div>
 					)
+			break;
+			case('select'):
+			formTemplate = (
+				<div>
+					{formdata.showLabel ? 
+						<h3>
+							{formdata.config.label}
+						</h3>
+						: null
+					}
+					<select
+						
+						{...formdata.config}
+						value={formdata.value}
+						onChange={ event => change( {event, id} )}
+					>
+					<option value="">Выбрать</option>
+					{
+						
+						formdata.config.options.map((item)=>(
+							<option key={item.key} value={item.key}>{item.value}</option>
+						))
+					}
+					</select>
+					{showError(formdata.element)}
+				</div>
+			)
 			break;
 			
 			default:
@@ -73,7 +100,7 @@ export const FormField = (props) => {
 				formTemplate = (
 						<div>
 						{
-							formdata.showlabel ? 
+							formdata.showLabel ? 
 							<div className="labelInputs">
 								{formdata.email.config.label}
 							</div>
@@ -90,7 +117,10 @@ export const FormField = (props) => {
 						</div>
 					)
 			break;
-			
+			case('input'):
+				formTemplate = (
+					{formdata.s}
+				)
 			default:
 				formTemplate = null;
 		}
