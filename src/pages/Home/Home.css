@@ -1,6 +1,9 @@
 .Home {
+	display: block;
+	position: relative;
 	background-color: #a3a8ee;
+	
 	min-width: 1024px;
-	height: 100%;
-	width: 100%;
+	height: auto;
+	margin: 0 auto;
 }

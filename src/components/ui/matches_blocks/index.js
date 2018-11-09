@@ -7,7 +7,7 @@ const Matches_block = ( {match} ) => {
 			
 		<div className={styles.wrapper}>
 			<div className={styles.left}>
-				<div className={styles.icon} style={{background:`url(/team_icons/${match.localThmb}.png) center center`, height: '120px', width: '120px'}}>
+				<div className={styles.icon} style={{background:`url(/team_icons/${match.localThmb}.png) center center no-repeat`, height: '120px', width: '120px'}}>
 					<div className={styles.name}>
 						{match.local}
 					</div>
@@ -20,7 +20,7 @@ const Matches_block = ( {match} ) => {
 				{match.final ? match.date : `Матч еше не сыгран ${match.date}`}
 			</div>
 			<div className={styles.right}>
-				<div className={styles.icon} style={{background:`url(/team_icons/${match.awayThmb}.png) center center`, height: '120px', width: '120px'}}>
+				<div className={styles.icon} style={{background:`url(/team_icons/${match.awayThmb}.png) center center no-repeat`, height: '120px', width: '120px'}}>
 					<div className={styles.name}>
 						{match.away}
 					</div>

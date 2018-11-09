@@ -16,6 +16,7 @@ export default class Enroll extends Component {
 			email: {
 				element: 'input',
 				value: '',
+
 				config: {
 					name: 'emailInput',
 					type: 'email',
@@ -109,7 +110,8 @@ export default class Enroll extends Component {
                         </div>
                         <div className={styles.input}>
 							<div className={styles.inputText}>
-							<FormField 
+							<FormField
+
 									id={'email'} 
 									formdata={this.state.formdata.email}
 									change={ (element) => this.updateForm(element) }

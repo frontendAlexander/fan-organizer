@@ -5,7 +5,7 @@ import Blocks from './Blocks';
 
 export const Matches = (props) => {
     return (
-		<div>
+		<div className={styles.container}>
 			<h3 className={styles.title}>Матчи команды</h3>
 			<div className={styles.wrapper}>
 				<div className={styles.container}>

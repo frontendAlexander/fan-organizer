@@ -7,7 +7,8 @@ import styles from './Text.css';
 
 
 export default class Text extends Component {
-	animateNumber = () => (
+	
+	animateText = () => (
 		<Animate 
 			show={true}
 			start={{
@@ -15,16 +16,18 @@ export default class Text extends Component {
 				rotate:0
 			}}
 			enter={{
-				opacity:[1],
+				opacity:[3],
 				rotate:[360],
 				timing: {duration:1000, easy:easePolyOut}
 			}}
 		>
 			{( {opacity,rotate} )=>{
 				return(
-						<div className={styles.number} style={{
+						<div style={{
 							opacity,
-							transform: `translate(260px,170px) rotate(${rotate}deg)`
+							margin: '400px 0 -345px auto',
+							fontSize: '2rem',
+							transform: `translate(0px,130px) rotate(${rotate}deg)`
 						}}>
 							<h2 className={styles.special}>
 								Только клуб один - в сердце навсегда!
@@ -35,63 +38,46 @@ export default class Text extends Component {
 		</Animate>
     )
 	
-	animateSecond = () => (
+	animateHorse = () => (
 		<Animate 
 			show={true}
 			start={{
-				opacity:0,
-				x:500,
-				y:450
+				opacity:0
+				
+				
 			}}
 			enter={{
-				opacity:[1],
-				x:[273],
-				y:[586],
-				timing: {delay:4000, duration:2000, easy:easePolyOut}
+				opacity:[3],
+				
+				
+				timing: {delay:3000, duration:2000, easy:easePolyOut}
 			}}
 		>
 			{( {x,y,opacity} )=>{
 				return(
-						<div className={styles.second} style={{
+						<div className={styles.horse} style={{
 							opacity,
 							background: `url(${FeaturedPlayer})`,
+							backgroundSize: 'cover',
+							backgroundPosition: 'center',
+							backgroundRepeat: 'no-repeat',
 							transform: `translate(${x},${y})`
 						}}>
-							<h1 className={styles.title}>Профессиональный футбольный клуб ЦСКА Москва</h1>
+							
 						</div>
 					)
 			}}
 		</Animate>
     )
-	animatePlayer = () => (
-		<Animate 
-			show={true}
-			start={{
-				opacity:0,
-			}}
-			enter={{
-				opacity:[1],
-				timing: {delay:100, duration: 500, ease: easePolyOut}
-			}}
-		>
-			{({x,y,opacity})=>{
-				return(
-						<div className={styles.player} style={{
-							opacity,
-							transform: `translate(500px,201px)`
-						}}>
-						Игрок
-						</div>
-					)
-			}}
-		</Animate>
-    )
+	
 	render(){
 		return (
-				<div className={styles.text}>
-					{this.animateNumber()}
-					{this.animateSecond()}
-				</div>
+			<div className={styles.container}>
+				
+					{this.animateText()}
+					{this.animateHorse()}
+				
+			</div>
 			)
 	}
 }

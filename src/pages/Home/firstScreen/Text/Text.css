@@ -1,40 +1,23 @@
-.text {
-    display: inline-flex;
-    flex-direction: column;
-    height: 800px;
-    width: 100%;
+.container {
+	display: block;
+	margin: 0 auto;
 }
 
-.second {
-    height: 400px;
-    width: 600px;
-    position: absolute;
-    font-size: 22px;
-    right: 0;
-    top: 114px;
+.horse {
+	width: 400px;
+	height: 400px;
+	margin-top: 33px;
+	position: absolute;
+	top: 100px;
+	left: 150px;
 }
-.title {
-    position: absolute;
-    top: -64px;
-    left: -226px;
-    color: black;
-    padding-bottom: 10px;
-}
-
-.player{
-    height:300px;
-    width:200px;
-}
-.number {
-    position: relative;
-    width: 600px;
-    font-size: 48px;
+@media screen and (max-width:794px){
+	.horse {
+		display: none;
+		float: left;
+	}
 }
 
 .special {
-    position: absolute;
-    left: -120px;
-    bottom: -400px;
-    font-size: 36px;
-    padding-top: 30px;
+	margin-left: -333px;
 }

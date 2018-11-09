@@ -216,7 +216,7 @@ class addEditMatch extends Component {
 			if(team.shortName === dataToSubmit.local){
 				dataToSubmit['localThmb'] = team.thmb;
 			}
-			if(team.shortName === dataToSubmit.aeay){
+			if(team.shortName === dataToSubmit.away){
 				dataToSubmit['awayThmb'] = team.thmb;
 			}
 		})

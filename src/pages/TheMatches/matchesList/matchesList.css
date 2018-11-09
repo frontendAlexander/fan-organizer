@@ -1,0 +1,24 @@
+.container {
+	display: inline-flex;
+	flex-direction: column;
+	margin: 70px auto;
+	height: inherit;
+	min-width: 100%;
+}
+.wrapper {
+	display: block;
+	position: relative;
+}
+.items {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+.item {
+	flex: 1 1 auto;
+	display: inline-block;
+	position: relative;
+	border: 1px solid black;
+	width: 100%;
+}

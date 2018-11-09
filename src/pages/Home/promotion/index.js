@@ -5,11 +5,11 @@ import styles from './promotion.css';
 
 export const Promotion  = (props) => {
 	return (
-			<div className={styles.wrapper} style={{background:"#a3a8ee"}}>
-				<div className={styles.container}>
+		
+				<div className={styles.container} style={{background:"#a3a8ee"}}>
 					<Enroll/>
 				</div>
-			</div>
+			
 		)
 };
 

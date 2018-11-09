@@ -9,6 +9,7 @@ import { CSKALogo } from '../ui/icons';
 class Header extends Component {
 	render(){
 		return (
+			<div>
 			<AppBar
 				styles={{
                     position: 'fixed',
@@ -36,10 +37,19 @@ class Header extends Component {
 							Команда
 						</Button>
 					</Link>
-						
+					<Link
+						to="/the-matches"
+					>
+						<Button
+							color="inherit"
+						>
+							Матчи
+						</Button>
+					</Link>
 					
 				</ToolBar>
 			</AppBar>
+			</div>
 			)
 	}
 };

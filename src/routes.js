@@ -6,6 +6,8 @@ import SignIn from './pages/SignIn';
 import Dashboard from './pages/Dashboard';
 import AdminMatches from './components/admin/adminMatches'
 import addEditMatch from './components/admin/adminMatches/addEditMatch';
+import TheMatches from './pages/TheMatches';
+
 
 export const routes = [
   {
@@ -73,6 +75,13 @@ export const routes = [
     isExact: true,
     isPrivate: true,
     component: addEditMatch
+  },
+  {
+    name: 'TheMatches',
+    path: '/the-matches',
+    isExact: true,
+    isPrivate: false,
+    component: TheMatches
   },
   {
     name: 'NotFound',

@@ -1,10 +1,10 @@
 .wrapper {
-    max-width: 1024px;
     justify-content: center;
     display: flex;
+    height: 100%;
     margin: 100px;
     text-align: center;
-    max-width: 1024px;
+    
 }
 .title {
     font-size: 24px;
@@ -18,7 +18,9 @@
 }
 .inputText {
     width: 40%;
+    
 }
+
 .btn {
     height:60px;
     width: 40%;
@@ -32,7 +34,8 @@
     font-size: 30px;
 }
 .discl {
-    margin-bottom: 20px;
+    
+
     font-size: 18px;
     overflow: hidden;
 }
