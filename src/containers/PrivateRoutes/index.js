@@ -4,14 +4,13 @@ import { Redirect } from 'react-router-dom';
 
 
 
-// захардкожено!!!
-//export const isAuth = true;
 
-const PrivateRoutes = ({ component: Component, user,  ...rest }) => (
+
+const PrivateRoutes = ({ component: Comp, user,  ...rest }) => (
   <Route
     {...rest}
     component={props => (
-      user ? <Component {...props} user={user}/> : <Redirect to="/sign-in" />
+      user ? <Comp {...props} user={user}/> : <Redirect to="/sign-in" />
     )}
   />
 );

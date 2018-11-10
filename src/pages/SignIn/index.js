@@ -48,8 +48,10 @@ class SignIn extends Component {
         for(let key in this.state.formdata){
             dataToSubmit[key] = this.state.formdata[key].value;
             formIsValid = this.state.formdata[key].valid && formIsValid;
+            console.log(dataToSubmit)
         }
         if(formIsValid){
+            console.log("VALID!")
             firebase.auth().signInWithEmailAndPassword(
                     dataToSubmit.email,
                     dataToSubmit.password

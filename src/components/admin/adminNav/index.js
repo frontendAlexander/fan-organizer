@@ -16,16 +16,12 @@ export const AdminNav = (props) => {
 			linkTo: '/admin-matches/edit-match'
 		},
 		{
-			title: '3',
-			linkTo: '/'
+			title: 'Игроки',
+			linkTo: '/admin-players'
 		},
 		{
-			title: '4',
-			linkTo: '/'
-		},
-		{
-			title: '5',
-			linkTo: '/'
+			title: 'Добавить игрока',
+			linkTo: '/admin-players/add-players'
 		}
 	];
 	const renderItems = () => (

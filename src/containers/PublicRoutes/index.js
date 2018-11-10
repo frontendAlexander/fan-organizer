@@ -1,11 +1,11 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 
-const PublicRoutes = ({component: Component, user, ...rest}) => (
+const PublicRoutes = ({component: Comp, user, ...rest}) => (
     <Route {...rest}
     component={props => ( rest.restricted ? 
-    ( user ? <Redirect to="/dashboard"/> : <Component {...props} user={user}/> ) 
-    : <Component {...props} user={user}/>  
+    ( user ? <Redirect to="/dashboard"/> : <Comp {...props} user={user}/> ) 
+    : <Comp {...props} user={user}/>  
     )}
     />
 );

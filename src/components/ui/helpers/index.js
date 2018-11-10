@@ -18,7 +18,7 @@ export const validate = (element) => {
 
 export const reverseArray = (actualArray) => {
 	let reversedArray = [];
-	for(let i; i < actualArray.length-1;i>=0,i--){
+	for(var i = actualArray.length - 1; i >= 0; --i){
 		reversedArray.push(actualArray[i]);
 	}
 	return reversedArray;

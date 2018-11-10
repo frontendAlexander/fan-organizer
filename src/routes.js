@@ -7,7 +7,8 @@ import Dashboard from './pages/Dashboard';
 import AdminMatches from './components/admin/adminMatches'
 import addEditMatch from './components/admin/adminMatches/addEditMatch';
 import TheMatches from './pages/TheMatches';
-
+import AdminPlayers from './components/admin/adminPlayers';
+import addEditPlayers from './components/admin/adminPlayers/addEditPlayers'
 
 export const routes = [
   {
@@ -34,6 +35,13 @@ export const routes = [
     restricted: false
   },
   {
+    name: 'TheMatches',
+    path: '/the-matches',
+    isExact: true,
+    isPrivate: false,
+    component: TheMatches
+  },
+  {
     name: 'SignIn',
     path: '/sign-in',
     isExact: true,
@@ -56,32 +64,39 @@ export const routes = [
     component: AdminMatches
   },
   {
-    name: 'addEditMatch/edit-match',
+    name: 'addEditMatch',
     path: '/admin-matches/edit-match',
     isExact: true,
     isPrivate: true,
     component: addEditMatch
   },
   {
-    name: 'addEditMatch',
+    name: 'addEditMatchID',
     path: '/admin-matches/edit-match/:id',
     isExact: true,
     isPrivate: true,
     component: addEditMatch
   },
   {
-    name: 'addEditMatch/edit-match',
-    path: '/admin-matches/edit-match',
+    name: 'AdminPlayers',
+    path: '/admin-players',
     isExact: true,
     isPrivate: true,
-    component: addEditMatch
+    component: AdminPlayers
   },
   {
-    name: 'TheMatches',
-    path: '/the-matches',
+    name: 'addEditPlayers',
+    path: '/admin-players/add-players',
     isExact: true,
-    isPrivate: false,
-    component: TheMatches
+    isPrivate: true,
+    component: addEditPlayers
+  },
+  {
+    name: 'addEditPlayersID',
+    path: '/admin-players/add-players/:id',
+    isExact: true,
+    isPrivate: true,
+    component: addEditPlayers
   },
   {
     name: 'NotFound',

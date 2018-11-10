@@ -5,7 +5,7 @@ import { firebase } from './firebase';
 import './resources/css/index.css';
 const user = true;
 render(
-  <App user={user}/>,
+  <App user={true} />,
   document.getElementById('root')
 );
 /*
@@ -13,3 +13,4 @@ firebase.auth().onAuthStateChanged((user)=>{
 	render(<App user={user}/>, document.getElementById('root'));
 });
 */
+

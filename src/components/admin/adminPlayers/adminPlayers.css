@@ -1,0 +1,9 @@
+.wrapper {
+	margin-top: 70px;
+}
+.progress {
+	position: absolute;
+	top: 50%;
+	left: 58%;
+	transform: translate(-50%, -50%);
+}

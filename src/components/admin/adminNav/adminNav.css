@@ -3,6 +3,7 @@
 	flex-direction: column;
 	position: relative;
 	margin-top: 60px;
+	padding: 10px 10px;
 	height: 600px;
 	width: 200px;
 	background-color: black;
@@ -12,5 +13,4 @@
 	display: block;
 	width: 100%;
 	padding: 10px 0;
-	border: 1px solid white;
 }

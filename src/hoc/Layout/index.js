@@ -7,7 +7,7 @@ import styles from './Layout.css';
 const Layout = (props) => {
 	return (
 			<div className={styles.container}>
-				<Header/>
+				<Header user={props.user}/>
 				{props.children}
 				<Footer/> 
 			</div>
